@@ -1,31 +1,39 @@
 @import 'mixins/clear.less';
+
 //最外层的包裹元素
-#wrapper{
+#wrapper {
+
     //头部
-    #header{
+    #header {
+
         //上面部分
-        .headTop{
+        .headTop {
             background: #eaeaea;
             height: 30px;
+
             //版心元素
-            .headTopMain{
+            .headTopMain {
                 width: 1200px;
                 margin: 0 auto;
                 line-height: 30px;
                 .clearfix();
+
                 //左侧
-                .left{
-                    h5{
+                .left {
+                    h5 {
                         float: left;
                         margin-right: 5px;
                     }
-                    p{
+
+                    p {
                         float: left;
-                        a{
-                            &:first-child{
-                                border-right: 1px solid #b3aeae;
-                                margin-right: 0px;
+
+                        a {
+                            &:first-child {
+                                border-right: 1px groove #b3aeae; // https://www.jianshu.com/p/54283902d4f7  边框样式写法总结
+                                margin-right: 2px;
                                 padding-right: 5px;
+
                             }
                         }
                     }
