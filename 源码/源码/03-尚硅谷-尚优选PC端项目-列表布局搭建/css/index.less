@@ -1,29 +1,37 @@
 @import 'mixins/clear.less';
+
 //最外层的包裹元素
-#wrapper{
+#wrapper {
+
     //头部
-    #header{
+    #header {
+
         //上面部分
-        .headTop{
+        .headTop {
             background: #eaeaea;
             height: 30px;
+
             //版心元素
-            .headTopMain{
+            .headTopMain {
                 width: 1200px;
                 margin: 0 auto;
                 line-height: 30px;
                 .clearfix();
+
                 //左侧
-                .left{
+                .left {
                     float: left;
-                    h5{
+
+                    h5 {
                         float: left;
                         margin-right: 5px;
                     }
-                    p{
+
+                    p {
                         float: left;
-                        a{
-                            &:first-child{
+
+                        a {
+                            &:first-child {
                                 border-right: 1px solid #b3aeae;
                                 margin-right: 0px;
                                 padding-right: 5px;
@@ -32,18 +40,22 @@
                     }
 
                 }
+
                 //右侧
-                .right{
+                .right {
                     float: right;
-                    nav{
+
+                    nav {
                         font-size: 0px;
-                        a{
+
+                        a {
                             margin-right: 10px;
                             padding-right: 10px;
                             font-size: 12px;
-                            border-right:1px solid #b3aeae;
-                            &:last-child{
-                                border:none;
+                            border-right: 1px solid #b3aeae;
+
+                            &:last-child {
+                                border: none;
                                 margin-right: 0px;
                                 padding-right: 0px;
                             }
